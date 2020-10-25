@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row justify-content-center mt-5 pt-5">
+    <div class="col-md-6 row">
+      <app-btn class="col mb-2" digit="C" status="danger" (userClick)="clear()"></app-btn>
+      <app-btn class="col mb-2" digit="CE" status="danger" (userClick)="reset()"></app-btn>
+      <app-display class="col-12 m-0 p-0" content="{{tempValue}}"></app-display>
+      <div class="w-100"></div>
+      <app-btn class="col p-0 mr-2 mb-2" digit="1" (userClick)="numKey($event)"></app-btn>
+      <app-btn class="col p-0 mr-2 mb-2" digit="2" (userClick)="numKey($event)"></app-btn>
+      <app-btn class="col p-0 mr-2 mb-2" digit="3" (userClick)="numKey($event)"></app-btn>
+      <app-btn class="col p-0 mr-2 mb-2" digit="+" status="warning" (userClick)="operate($event)"></app-btn>
+      <div class="w-100"></div>
+      <app-btn class="col p-0 mr-2 mb-2" digit="4" (userClick)="numKey($event)"></app-btn>
+      <app-btn class="col p-0 mr-2 mb-2" digit="5" (userClick)="numKey($event)"></app-btn>
+      <app-btn class="col p-0 mr-2 mb-2" digit="6" (userClick)="numKey($event)"></app-btn>
+      <app-btn class="col p-0 mr-2 mb-2" digit="-" status="warning" (userClick)="operate($event)"></app-btn>
+      <div class="w-100"></div>
+      <app-btn class="col p-0 mr-2 mb-2" digit="7" (userClick)="numKey($event)"></app-btn>
+      <app-btn class="col p-0 mr-2 mb-2" digit="8" (userClick)="numKey($event)"></app-btn>
+      <app-btn class="col p-0 mr-2 mb-2" digit="9" (userClick)="numKey($event)"></app-btn>
+      <app-btn class="col p-0 mr-2 mb-2" digit="x" status="warning" (userClick)="operate($event)"></app-btn>
+      <div class="w-100"></div>
+      <app-btn class="col p-0 mr-2 mb-2" digit="0" (userClick)="numKey($event)"></app-btn>
+      <app-btn class="col p-0 mr-2 mb-2" digit="." (userClick)="numKey($event)"></app-btn>
+      <app-btn class="col p-0 mr-2 mb-2" digit="=" status="warning" (userClick)="operate($event)"></app-btn>
+      <app-btn class="col p-0 mr-2 mb-2" digit="/" status="warning" (userClick)="operate($event)"></app-btn>
+    </div>
+  </div>
+</div>
